@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .login, .dashboard, .settings {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .login input, .settings input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .login button, .settings button {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login button:hover, .settings button:hover {
+            background-color: #555;
+        }
+        .settings img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        .settings .social-input {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Login Section -->
+        <div class="login">
+            <h1>Login</h1>
+            <form>
+                <label>Email:</label>
+                <input type="email" placeholder="Enter your email" required>
+                <label>Password:</label>
+                <input type="password" placeholder="Enter your password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- Dashboard Section -->
+        <div class="dashboard">
+            <h1>Dashboard</h1>
+            <p>Welcome to your social media dashboard! Your connected social media feeds will appear here.</p>
+            <!-- Placeholder for social media feeds -->
+        </div>
+
+        <!-- Settings Section -->
+        <div class="settings">
+            <h1>Settings</h1>
+            <p>Manage your social media accounts here.</p>
+            <p>Email: shubhamsahu3080@gmail.com</p>
+            <div class="social-input">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+                <input type="text" placeholder="Enter your LinkedIn profile URL">
+            </div>
+            <div class="social-input">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
+                <input type="text" placeholder="Enter your GitHub profile URL">
+            </div>
+            <button type="submit">Save Settings</button>
+        </div>
+    </div>
+
+</body>
+</html>
